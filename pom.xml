@@ -19,6 +19,9 @@
         <module>javaEE-SpringMVC</module>
         <module>javaee-05</module>
         <module>javaEE-SpringMVC02</module>
+        <module>java-AOP</module>
+        <module>mybatis</module>
+        <module>java-mybatis</module>
     </modules>
 
    <dependencyManagement>

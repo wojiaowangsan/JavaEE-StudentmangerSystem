@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mybatis.dao.StudentHomeworkMapper" >
+    <resultMap id="BaseResultMap" type="com.example.mybatis.model.StudentHomework" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="homework_title" property="homeworktitle" jdbcType="VARCHAR" />
+        <result column="homework_content" property="homeworkcontent" jdbcType="TEXT" />
+        <result column="create_time" property="createtime" jdbcType="TIMESTAMP" />
+        <result column="student_id" property="studentid" jdbcType="INTEGER" />
+        <result column="homework_id" property="homeworkid" jdbcType="INTEGER" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+     id,homework_title,homework_content,create_time,student_id,homework_id
+  </sql>
+    <select id="findAll" resultType="com.example.mybatis.model.homework">
+       SELECT * FROM school_s_homework
+    </select>
+    <insert id="insert" parameterType="com.example.mybatis.model.homework">
+  insert into school_s_homework(id,homework_title,homework_content,create_time,student_id,homweork_id)
+   values(?,?,?,?,?,?)
+    </insert>
+</mapper>

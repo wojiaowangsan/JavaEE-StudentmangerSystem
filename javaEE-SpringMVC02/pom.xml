@@ -15,6 +15,12 @@
     <name>javaEE-SpringMVC02 Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+    <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+    </dependencies>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,6 +53,12 @@
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.6.8.RELEASE</version>
+        </dependency>
+
     </dependencies>
 </dependencyManagement>
     <build>

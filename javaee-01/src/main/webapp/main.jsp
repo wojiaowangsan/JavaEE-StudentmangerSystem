@@ -22,10 +22,10 @@
             <th colspan="2" align="center" ><a href="addStudent.jsp ">添加学生</a></th>
         </tr>
         <tr>
-            <th colspan="2" align="center" ><a href="/list">查看学生作业</a></th>
+            <th colspan="2" align="center" ><a href="/index.jsp">查看学生作业</a></th>
         </tr>
         <tr>
-            <th colspan="2" align="center" ><a href="/studentlist">查看学生名单</a></th>
+            <th colspan="2" align="center" ><a href="/student.jsp">查看学生名单</a></th>
         </tr>
     </table>
     </fieldset>

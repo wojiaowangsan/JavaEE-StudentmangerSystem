@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mybatis.dao.homeworkMapper" >
+    <resultMap id="BaseResultMap" type="com.example.mybatis.model.homework" >
+        <id column="homework_Id" property="homeworkId" jdbcType="INTEGER" />
+        <result column="homework_Title" property="homeworkTitle" jdbcType="VARCHAR" />
+        <result column="homework_Content" property="homeworkContent" jdbcType="TEXT" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+     homework_Id,homework_Title,homework_Content
+  </sql>
+    <select id="findAll" resultType="com.example.mybatis.model.homework">
+        select * from school_homework;
+    </select>
+    <insert id="insert" parameterType="com.example.mybatis.model.homework">
+ insert into school_homework(homework_Id,homework_Title,homework_Content) values(?,?,?)
+    </insert>
+</mapper>
